@@ -32,8 +32,8 @@ export default function LoginPage() {
   return (
     <div className="app-page auth-page">
       <div className="auth-card glass card border-0 p-4 p-md-5">
-        <div className="auth-title text-center">Bejelentkezés</div>
-        <p className="auth-subtitle text-center">
+        <div className="auth-title text-center text-white">Bejelentkezés</div>
+        <p className="auth-subtitle text-center text-white">
           Lépj be, és kezeld az elveszett vagy talált kutyák bejelentéseit.
         </p>
 
@@ -65,13 +65,13 @@ export default function LoginPage() {
           />
         </div>
 
-        <div className="text-center mt-4">
+        <div className="text-center mt-4 text-white">
           <Link to="/" className="auth-link">
             Vissza a főoldalra
           </Link>
         </div>
 
-        <div className="text-center mt-2">
+        <div className="text-center mt-2 text-white">
           <Link to="/registration" className="auth-link">
             Nincs még fiókod? Regisztrálj
           </Link>

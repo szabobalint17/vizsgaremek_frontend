@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Modal from "../components/Modal";
 import { useNavigate } from "react-router-dom";
-import { adataim, sajatKutyakLekerese, kutyaTorlese } from "../api";
+import { adataim, sajatKutyakLekerese, kutyaTorlese, BASE } from "../api";
 
 export default function ImagesPage() {
     const [user, setUser] = useState(null);
@@ -112,7 +112,7 @@ export default function ImagesPage() {
                                     >
                                         {adat.kep ? (
                                             <img
-                                                src={`http://localhost:3000/uploads/${adat.kep}`}
+                                                src={`${BASE}/uploads/${adat.kep}`}
                                                 alt={adat.nev}
                                                 className="w-100 h-100"
                                                 style={{ objectFit: "cover" }}

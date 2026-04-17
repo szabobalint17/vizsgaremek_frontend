@@ -1,3 +1,5 @@
+import { BASE } from "../api";
+
 function getNemSzoveg(nem) {
     if (String(nem) === "0") return "Kan";
     if (String(nem) === "1") return "Szuka";
@@ -37,7 +39,7 @@ export default function KutyaKartya({ kutya, tipus = "elveszett" }) {
             : kutya.eltunes_ideje || kutya.ido || kutya.letrehozva;
 
     const kepSrc = kutya.kep
-        ? `http://localhost:3000/uploads/${kutya.kep}`
+        ? `${BASE}/uploads/${kutya.kep}`
         : "https://via.placeholder.com/800x500?text=Nincs+kep";
 
     const statusText = tipus === "talalt" ? "Talált" : "Elveszett";
