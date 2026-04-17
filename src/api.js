@@ -146,6 +146,7 @@ export async function elveszettKutyakLekerese() {
     });
 
     const data = await res.json();
+    console.log(data);
     if (!res.ok) return { result: false, message: data.message, kutyak: [] };
     return { result: true, kutyak: data };
 }

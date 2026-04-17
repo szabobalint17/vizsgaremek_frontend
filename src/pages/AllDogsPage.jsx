@@ -27,6 +27,7 @@ export default function AllDogsPage() {
 
         setElveszettKutyak(elveszettRes.result ? (elveszettRes.kutyak || []) : []);
         setTalaltKutyak(talaltRes.result ? (talaltRes.kutyak || []) : []);
+        console.log('kutyak', elveszettKutyak);
       } catch (error) {
         console.log("Minden kutya betöltési hiba:", error);
         setElveszettKutyak([]);

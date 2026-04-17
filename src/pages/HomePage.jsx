@@ -46,7 +46,7 @@ export default function HomePage() {
                                         <Button color="secondary" content="Talált kutyák" onClick={() => nav("/talalt")} />
                                     </div>
                                     <div className="col-12 col-md-4">
-                                        <Button color="outline-dark" content="Minden kutya" onClick={() => nav("/dogs")} />
+                                        <Button color="outline-dark" content="Minden kutya" onClick={() => nav("/kutya")} />
                                     </div>
                                 </div>
                             </div>
