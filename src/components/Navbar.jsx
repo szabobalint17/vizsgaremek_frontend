@@ -86,7 +86,7 @@ export default function Navbar({ user }) {
                 <>
                   <Link to="/elveszett" className="app-nav-link" onClick={closeMenu}>Elveszett</Link>
                   <Link to="/talalt" className="app-nav-link" onClick={closeMenu}>Talált</Link>
-                  <Link to="/dogs" className="app-nav-link" onClick={closeMenu}>Összes kutya</Link>
+                  <Link to="/kutya" className="app-nav-link" onClick={closeMenu}>Összes kutya</Link>
                   <Link to="/images" className="app-nav-link" onClick={closeMenu}>Saját feltöltések</Link>
                   <Link to="/profile" className="app-nav-link" onClick={closeMenu}>Profil</Link>
                 </>
