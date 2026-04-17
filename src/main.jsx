@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/elveszett" element={<ElveszettKutyaPage />} />
           <Route path="/talalt" element={<TalaltKutyaPage />} />
-          <Route path="/dogs" element={<AllDogsPage />} />
+          <Route path="/kutya" element={<AllDogsPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
