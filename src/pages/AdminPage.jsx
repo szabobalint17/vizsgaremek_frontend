@@ -108,7 +108,7 @@ export default function AdminPage() {
           </div>
 
           <div className="mini-stat-row">
-            <div className="mini-stat">
+            <div className="mini-stat mb-3 my-3">
               <strong>{felhasznalok.length}</strong>
               <span className="text-muted-soft">felhasználó</span>
             </div>

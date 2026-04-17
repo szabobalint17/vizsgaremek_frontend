@@ -93,7 +93,7 @@ export default function Navbar({ user }) {
               )}
 
               {isAdmin && (
-                <Link to="/admin" className="app-nav-link app-nav-link-admin" onClick={closeMenu}>
+                <Link to="/admin" className="app-nav-link app-nav-link-admin bg-danger" onClick={closeMenu}>
                   Admin
                 </Link>
               )}

@@ -64,28 +64,28 @@ export default function ProfilePage() {
             <div className="profile-card glass">
               <div className="profile-card-body">
                 <h1 className="page-title text-center mb-2">Profil</h1>
-                <p className="page-subtitle text-center mb-4">
+                <p className="page-subtitle text-center mb-3">
                   Itt kezelheted a fiókod adatait és biztonsági beállításait.
                 </p>
 
                 <div className="profile-info-box">
                   <div className="profile-info-row">
-                    <span className="profile-label">Név:</span>
+                    <span className="profile-label">Név: </span>
                     <span className="profile-value">{user?.teljes_nev || "Nincs adat"}</span>
                   </div>
 
                   <div className="profile-info-row">
-                    <span className="profile-label">E-mail:</span>
+                    <span className="profile-label">E-mail: </span>
                     <span className="profile-value">{user?.email || "Nincs adat"}</span>
                   </div>
 
                   <div className="profile-info-row">
-                    <span className="profile-label">Telefonszám:</span>
+                    <span className="profile-label">Telefonszám: </span>
                     <span className="profile-value">{user?.telefonszam || "Nincs adat"}</span>
                   </div>
 
                   <div className="profile-info-row">
-                    <span className="profile-label">Szerepkör:</span>
+                    <span className="profile-label">Szerepkör: </span>
                     <span className="profile-value">
                       {Number(user?.szerepkor) === 1 ? "Admin" : "Felhasználó"}
                     </span>
