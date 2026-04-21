@@ -30,7 +30,8 @@ export default function UploadPage() {
       if (userData.result) {
         setUser(userData.user);
       } else {
-        nav('/login');
+        nav('/');
+        alert('jelentkezz be')
         return;
       }
 
