@@ -49,7 +49,7 @@ export default function KutyaKartya({ kutya, tipus = "elveszett" }) {
             : "dog-status dog-status-lost";
 
     return (
-        <div className="dog-card glass">
+        <div className="dog-card glass h-100">
             <div className="dog-card-image-wrap">
                 <img
                     src={kepSrc}
