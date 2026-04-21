@@ -16,7 +16,7 @@ export default function TalaltKutyaPage() {
         const u = await adataim();
         if (u.result) setUser(u.user);
         else{
-          nav('/')
+          await nav('/')
           alert('jelentkezz be')
         }
 

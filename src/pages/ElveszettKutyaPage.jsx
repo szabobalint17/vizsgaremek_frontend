@@ -2,17 +2,22 @@ import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import KutyaKartya from '../components/KutyaKartya';
 import { adataim, elveszettKutyakLekerese } from '../api';
+import { useNavigate } from 'react-router-dom';
 
 export default function ElveszettKutyaPage() {
   const [user, setUser] = useState(null);
   const [kutyak, setKutyak] = useState([]);
   const [loading, setLoading] = useState(true);
+  const nav = useNavigate();
 
   useEffect(() => {
     (async () => {
       const u = await adataim();
       if (u.result) setUser(u.user);
-
+      else{
+        await nav('/')
+        alert('jelentkezz be')
+      }
       const res = await elveszettKutyakLekerese();
       setKutyak(res.result ? res.kutyak || [] : []);
 

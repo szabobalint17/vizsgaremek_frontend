@@ -6,6 +6,7 @@ import {
   elveszettKutyakLekerese,
   talaltKutyakLekerese
 } from "../api";
+import { useNavigate } from "react-router-dom";
 
 export default function AllDogsPage() {
   const [user, setUser] = useState(null);
@@ -13,12 +14,17 @@ export default function AllDogsPage() {
   const [talaltKutyak, setTalaltKutyak] = useState([]);
   const [loading, setLoading] = useState(true);
   const [szuro, setSzuro] = useState("mind");
+  const nav = useNavigate();
 
   useEffect(() => {
     const betoltes = async () => {
       try {
         const userRes = await adataim();
         if (userRes.result) setUser(userRes.user);
+        else{
+          await nav('/')
+          alert('jelentkezz be')
+        }
 
         const [elveszettRes, talaltRes] = await Promise.all([
           elveszettKutyakLekerese(),
