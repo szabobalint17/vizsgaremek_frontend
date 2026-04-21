@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TextBox from '../components/TextBox';
 import Button from '../components/Button';
-import { regisztracio } from '../api';
+import { adataim, regisztracio } from '../api';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -35,6 +35,15 @@ export default function RegistrationPage() {
       navigation('/login');
     }
   };
+
+  useEffect(() => {
+    (async () => {
+      const data = await adataim();
+      if (data.result) {
+        navigation("/");
+      } 
+    })();
+  }, []);
 
   return (
     <div className="app-page auth-page">

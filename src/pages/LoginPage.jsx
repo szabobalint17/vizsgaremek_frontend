@@ -2,7 +2,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TextBox from '../components/TextBox';
 import Button from '../components/Button';
-import { belepes } from '../api';
+import { adataim, belepes } from '../api';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
@@ -10,6 +10,7 @@ export default function LoginPage() {
   const [jelszo, setJelszo] = useState('');
   const [loading, setLoading] = useState(false);
   const navigation = useNavigate();
+  const [user, setUser] = useState(null);
 
   const handleLogin = async () => {
     if (!usernameOrEmail.trim() || !jelszo.trim()) {
@@ -28,6 +29,15 @@ export default function LoginPage() {
       window.location.reload();
     }
   };
+
+  useEffect(() => {
+    (async () => {
+      const data = await adataim();
+      if (data.result) {
+        navigation("/");
+      } 
+    })();
+  }, []);
 
   return (
     <div className="app-page auth-page">
