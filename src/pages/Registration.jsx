@@ -3,7 +3,7 @@ import TextBox from '../components/TextBox';
 import Button from '../components/Button';
 import { adataim, regisztracio } from '../api';
 import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function RegistrationPage() {
   const navigation = useNavigate();
