@@ -87,39 +87,39 @@ Főbb mezők:
 - `id`
 - `megnevezes`
 
-## Képernyőképek
+## Képernyőképek:
 
-### Főoldal
+### Főoldal:
 
-![Főoldal](./screenshots/Fooldal.png)
+<img width="945" height="413" alt="Fooldal" src="https://github.com/user-attachments/assets/d2931ea8-98a8-44f7-84f9-afe8d7835cde" />
 
-### Összes kutya oldal
+### Összes kutya oldal:
 
-![Összes kutya](./screenshots/Osszeskutya.png)
+<img width="947" height="413" alt="Osszeskutya" src="https://github.com/user-attachments/assets/85b0e606-249c-44bd-8d15-233803bf26a7" />
 
-### Elveszett kutyák
+### Elveszett kutyák:
 
-![Elveszett kutyák](./screenshots/Elveszett.png)
+<img width="940" height="412" alt="Elveszett" src="https://github.com/user-attachments/assets/fa45708e-f4e5-4bf1-b4e0-59832c9f5171" />
 
-### Talált kutyák
+### Talált kutyák:
 
-![Talált kutyák](./screenshots/Talalt.png)
+<img width="946" height="410" alt="Talalt" src="https://github.com/user-attachments/assets/8c51caba-4864-4e9c-873c-af7cf94026bc" />
 
-### Saját feltöltések
+### Saját feltöltések:
 
-![Saját kutyák](./screenshots/Sajatkutyak.png)
+<img width="947" height="407" alt="Sajatkutyak" src="https://github.com/user-attachments/assets/2242deeb-93bb-4082-8732-0730054d53ab" />
 
-### Profil oldal
+### Profil oldal:
 
-![Profil](./screenshots/Profil.png)
+<img width="947" height="407" alt="Profil" src="https://github.com/user-attachments/assets/aa0ddfe7-c28f-490c-b9e4-a90cc8974b18" />
 
-### Admin panel
+### Admin panel:
 
-![Admin panel](./screenshots/Adminpanel.png)
+<img width="944" height="409" alt="Adminpanel" src="https://github.com/user-attachments/assets/8ca88b3e-861c-4a9b-a04c-25711e7b4272" />
 
-### Adatbázis diagram
+### Adatbázis diagram:
 
-![Adatbázis diagram](./screenshots/sqlkutya.png)
+<img width="659" height="271" alt="sqlkutya" src="https://github.com/user-attachments/assets/a1b2104a-43e1-4055-b2eb-94cee2da37b2" />
 
 ## Használt technológiák
 
